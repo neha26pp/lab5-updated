@@ -50,7 +50,6 @@
             this.label1.Size = new System.Drawing.Size(55, 25);
             this.label1.TabIndex = 1;
             this.label1.Text = "result";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Form1
             // 

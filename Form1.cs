@@ -21,16 +21,11 @@ namespace lab5_updated
             InitializeComponent();
            
 
-            string filePath = "C:/Users/NEHA/PENN STATE/spring2023/sweng421 - software architecture/labs/lab5-updated/modules.txt";
+            string filePath = "..\\..\\..\\modules.txt";
             //Create an object of FileInfo for specified path  
             factory = new Factory(filePath, listBox1);
                       
 
-
-        }
-
-        public void Form1_Load(object sender, EventArgs e)
-        {
 
         }
 
@@ -43,14 +38,7 @@ namespace lab5_updated
                 //call factory's method that will create the specific module based on selection 
                 factory.createModule(listBox1.SelectedItem.ToString());
                 label1.Text = "Computed Result = " + Math.Round(Module.getCurrentvalue(), 3).ToString();
-
-
             }
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

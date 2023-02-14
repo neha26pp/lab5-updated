@@ -35,7 +35,7 @@ namespace lab5_updated
 
 
         //Dialog box to accept user input
-        public static DialogResult InputBox(double currentVal, string promptText, ref string value)
+        private static DialogResult InputBox(double currentVal, string promptText, ref string value)
         {
             Form popupForm = new Form();
             Label label = new Label();
